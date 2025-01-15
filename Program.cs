@@ -7,8 +7,9 @@ using Mono.Options;
 using Newtonsoft.Json;
 using pdf_merger.Extension;
 using pdf_merger.Model;
+using PdfUtil;
 
-namespace PdfUtil
+namespace pdf_merger
 {
     class Program
     {
@@ -30,7 +31,7 @@ namespace PdfUtil
                     pdfParams.Attachments = new List<PdfMergerAttachment>();
                 }
 
-                var pdfUtils = new PdfExeUtils();
+                var pdfUtils = new PdfMergerUtil();
 
                 pdfUtils.MergePdfFiles(pdfParams);
 

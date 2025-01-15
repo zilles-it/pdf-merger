@@ -140,7 +140,7 @@
     <Compile Include="Model\PdfMergerResult.cs" />
     <Compile Include="Model\PdfMergerParams.cs" />
     <Compile Include="MyPdfADocument.cs" />
-    <Compile Include="PdfExeUtils.cs" />
+    <Compile Include="PdfMergerUtil.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

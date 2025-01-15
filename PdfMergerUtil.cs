@@ -15,7 +15,7 @@ using pdf_merger.Model;
 
 namespace PdfUtil
 {
-    public class PdfExeUtils
+    public class PdfMergerUtil
     {
         private const double MB = 1024 * 1024;
 
