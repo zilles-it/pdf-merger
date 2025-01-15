@@ -1,3 +1,5 @@
+# GNU Affero General Public License v3.0
+
 Copyright (C) 2025 ZILLES-IT GmbH
 
 Dieses Programm ist freie Software: Sie können es unter den Bedingungen
@@ -13,15 +15,11 @@ GNU Affero General Public License für weitere Details.
 Sie sollten eine Kopie der GNU Affero General Public License zusammen mit
 diesem Programm erhalten haben. Falls nicht, siehe <https://www.gnu.org/licenses/>.
 
+---
 
-                    GNU AFFERO GENERAL PUBLIC LICENSE
-                       Version 3, 19 November 2007
+## Vollständiger Lizenztext
 
- Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
- Everyone is permitted to copy and distribute verbatim copies
- of this license document, but changing it is not allowed.
-
-                            Preamble
+### Preamble
 
   The GNU Affero General Public License is a free, copyleft license for
 software and other kinds of works, specifically designed to ensure
