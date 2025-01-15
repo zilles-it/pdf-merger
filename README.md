@@ -8,5 +8,5 @@ The ICC profile sRGB2014.icc must be downloaded separately and copied to the "Da
 # Usage
 pdf-merger.exe -s="c:\temp\invoice.pdf;c:\temp\attachments.pdf" -z="C:\temp\zugferd.xml" -d="C:\temp\out.pdf" -m=20
 
-# Usage
-Licence: AGPL
+# Licence: AGPL 3.0
+This app uses <a href="https://github.com/itext/itext7-dotnet">iText Core</a>.
