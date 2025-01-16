@@ -214,7 +214,10 @@ namespace PdfUtil
                 path = pdfPfad.Left(posPunkt) + "-" + counter + ".pdf";
             }
 
-            string iccProfilePath = @"Data\sRGB2014.icc";
+            string exeLocation = System.Reflection.Assembly.GetEntryAssembly().Location;
+            string directory = Path.GetDirectoryName(exeLocation);
+
+            string iccProfilePath = Path.Combine(directory, @"Data\sRGB2014.icc");
 
             writer = new PdfWriter(path);
 
