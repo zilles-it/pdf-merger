@@ -36,6 +36,8 @@ namespace pdf_merger
         {
             try
             {
+                PrintLicenseText();
+
                 PdfMergerParams pdfParams = ParseArgs(args);
 
                 Console.WriteLine("PDF printing started");
@@ -64,6 +66,29 @@ namespace pdf_merger
             }
         }
 
+        private static void PrintLicenseText()
+        {
+            string text = @"**************************************************
+  This application uses software licensed under the
+  GNU Affero General Public License (AGPL) Version 3.
+
+  The AGPL ensures that the source code of the utilized
+  open-source components is available to everyone.
+
+  For information about the components used and access
+  to the source code, please visit:
+  <URL to the license page or source code repository>
+
+  For more details about the AGPL, visit:
+  https://www.gnu.org/licenses/agpl-3.0.html
+  
+  Source code of this application is available:
+  https://github.com/zilles-it/pdf-merger/
+**************************************************
+";
+            Console.WriteLine(text);
+        }
+
         private static PdfMergerParams ParseArgs(string[] args)
         {
             var pdfParams = new PdfMergerParams()
@@ -77,7 +102,7 @@ namespace pdf_merger
 
             var optionSet = new OptionSet();
 
-            optionSet.Add("c|config=", "Path to config.json file", (v) =>
+            optionSet.Add("c |config=", "Path to config.json file", (v) =>
             {
                 string configPfad = v;
 
